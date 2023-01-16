@@ -1,0 +1,12 @@
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\bin\Debug\MoneyCollectors.dll
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\bin\Debug\MoneyCollectors.pdb
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.csprojAssemblyReference.cache
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.csproj.CoreCompileInputs.cache
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.dll
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.pdb
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\2021\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\bin\Debug\MoneyCollectors.dll
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\2021\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\bin\Debug\MoneyCollectors.pdb
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\2021\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.csproj.AssemblyReference.cache
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\2021\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.csproj.CoreCompileInputs.cache
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\2021\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.dll
+C:\Users\200158214\OneDrive - Northcentral Technical College\Courses\2021\Fall 2021\Object Orientated Programming C\Zoo\6.5\Zoo 6.5B Jefferson\MoneyCollectors\obj\Debug\MoneyCollectors.pdb

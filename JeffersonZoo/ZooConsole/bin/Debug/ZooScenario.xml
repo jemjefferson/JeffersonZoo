@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZooScenario</name>
+    </assembly>
+    <members>
+        <member name="T:ZooScenario.AnimalWindow">
+            <summary>
+            Interaction logic for AnimalWindow.xaml.
+            </summary>
+            <summary>
+            AnimalWindow
+            </summary>
+        </member>
+        <member name="F:ZooScenario.AnimalWindow.animal">
+            <summary>
+            The animal to be created.
+            </summary>
+        </member>
+        <member name="M:ZooScenario.AnimalWindow.#ctor(Animals.Animal)">
+            <summary>
+            Instantiates a new instance of the AnimalWindow class.
+            </summary>
+            <param name="animal">The animal to be created.</param>
+        </member>
+        <member name="M:ZooScenario.AnimalWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ZooScenario.App">
+            <summary>
+            Contains interaction logic for App.xaml.
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:ZooScenario.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:ZooScenario.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:ZooScenario.CageWindow">
+            <summary>
+            Interaction logic for CageWindow.xaml.
+            </summary>
+            <summary>
+            CageWindow
+            </summary>
+        </member>
+        <member name="M:ZooScenario.CageWindow.#ctor(Zoos.Cage)">
+            <summary>
+            Initializes an instance of the CageWindow Window.
+            </summary>
+            <param name="cage">A cage holding specific animals.</param>
+        </member>
+        <member name="M:ZooScenario.CageWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ZooScenario.GuestWindow">
+            <summary>
+            Interaction logic for GuestWindow.xaml.
+            </summary>
+            <summary>
+            GuestWindow
+            </summary>
+        </member>
+        <member name="M:ZooScenario.GuestWindow.#ctor(People.Guest)">
+            <summary>
+            Instantiates an instance of the guest window.
+            </summary>
+            <param name="guest">The guest being created.</param>
+        </member>
+        <member name="M:ZooScenario.GuestWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ZooScenario.MainWindow">
+            <summary>
+            Contains interaction logic for MainWindow.xaml.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:ZooScenario.MainWindow.comoZoo">
+            <summary>
+            Minnesota's Como Zoo.
+            </summary>
+        </member>
+        <member name="M:ZooScenario.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the MainWindow class.
+            </summary>
+        </member>
+        <member name="M:ZooScenario.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:ZooScenario.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ZooScenario.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ZooScenario.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>People</name>
+    </assembly>
+    <members>
+        <member name="T:People.Booth">
+            <summary>
+            The class which is used to represent a booth.
+            </summary>
+        </member>
+        <member name="F:People.Booth.attendant">
+            <summary>
+            The employee currently assigned to be the attendant of the booth.
+            </summary>
+        </member>
+        <member name="F:People.Booth.items">
+            <summary>
+            A list of items in the booth.
+            </summary>
+        </member>
+        <member name="M:People.Booth.#ctor(People.Employee)">
+            <summary>
+            Initializes a new instance of the Booth class.
+            </summary>
+            <param name="attendant">The employee to be the booth's attendant.</param>
+            <param name="ticketPrice">The price of a ticket.</param>
+            <param name="waterBottlePrice">The price of a water bottle.</param>
+        </member>
+        <member name="P:People.Booth.Attendant">
+            <summary>
+            Gets the attendant working the booth.
+            </summary>
+        </member>
+        <member name="P:People.Booth.Items">
+            <summary>
+            Gets the list of items.
+            </summary>
+        </member>
+        <member name="T:People.Employee">
+            <summary>
+            The class which is used to represent an employee.
+            </summary>
+        </member>
+        <member name="F:People.Employee.name">
+            <summary>
+            The name of the employee.
+            </summary>
+        </member>
+        <member name="F:People.Employee.number">
+            <summary>
+            The employee's identification number.
+            </summary>
+        </member>
+        <member name="F:People.Employee.numberOfRoomsSterilized">
+            <summary>
+            The number of rooms the employee has sterilized.
+            </summary>
+        </member>
+        <member name="M:People.Employee.#ctor(System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the Employee class.
+            </summary>
+            <param name="name">The name of the employee.</param>
+            <param name="number">The employee's identification number.</param>
+        </member>
+        <member name="P:People.Employee.Weight">
+            <summary>
+            Gets or sets the weight of the employee.
+            </summary>
+        </member>
+        <member name="P:People.Employee.WeightGainPercentage">
+            <summary>
+            Gets the weight gained after eating.
+            </summary>
+        </member>
+        <member name="M:People.Employee.DeliverAnimal(Reproducers.IReproducer)">
+            <summary>
+            Aids the specified reproducer in delivering its baby.
+            </summary>
+            <param name="reproducer">The reproducer that is to give birth.</param>
+            <returns>The resulting baby reproducer.</returns>
+        </member>
+        <member name="M:People.Employee.Eat(Foods.Food)">
+            <summary>
+            Eats the specified food.
+            </summary>
+            <param name="food">The food to eat.</param>
+        </member>
+        <member name="M:People.Employee.FindItem(System.Collections.Generic.List{BoothItems.Item},System.Type)">
+            <summary>
+            Finds the correct item from the booth.
+            </summary>
+            <param name="items">The list of items in the booth.</param>
+            <param name="type">The type of item being requested.</param>
+            <returns>Returns the item being requested.</returns>
+        </member>
+        <member name="M:People.Employee.SterilizeBirthingArea">
+            <summary>
+            Sterilizes the birthing area in preparation for delivering a baby.
+            </summary>
+        </member>
+        <member name="T:People.GivingBooth">
+            <summary>
+            This class represents a booth that gives items.
+            </summary>
+        </member>
+        <member name="M:People.GivingBooth.#ctor(People.Employee)">
+            <summary>
+            Instantiates a new instance of the GivingBooth class.
+            </summary>
+            <param name="attendant">The attendant working the booth.</param>
+        </member>
+        <member name="M:People.GivingBooth.GiveFreeCouponBook">
+            <summary>
+            Gives out a free coupon book to a guest.
+            </summary>
+            <returns>Returns a coupon book.</returns>
+        </member>
+        <member name="M:People.GivingBooth.GiveFreeMap">
+            <summary>
+            Gives out a free map to a guest.
+            </summary>
+            <returns>Returns a map.</returns>
+        </member>
+        <member name="T:People.Guest">
+            <summary>
+            The class which is used to represent a guest.
+            </summary>
+        </member>
+        <member name="F:People.Guest.age">
+            <summary>
+            The age of the guest.
+            </summary>
+        </member>
+        <member name="F:People.Guest.bag">
+            <summary>
+            The guest's bag of items.
+            </summary>
+        </member>
+        <member name="F:People.Guest.name">
+            <summary>
+            The name of the guest.
+            </summary>
+        </member>
+        <member name="F:People.Guest.wallet">
+            <summary>
+            The guest's wallet.
+            </summary>
+        </member>
+        <member name="F:People.Guest.gender">
+            <summary>
+            The guest's gender.
+            </summary>
+        </member>
+        <member name="F:People.Guest.checkingAccount">
+            <summary>
+            The guest's checking account.
+            </summary>
+        </member>
+        <member name="M:People.Guest.#ctor(System.String,System.Int32,System.Decimal,People.WalletColor,Reproducers.Gender,MoneyCollectors.IMoneyCollector)">
+            <summary>
+            Initializes a new instance of the Guest class.
+            </summary>
+            <param name="name">The name of the guest.</param>
+            <param name="age">The age of the guest.</param>
+            <param name="moneyBalance">The initial amount of money to put into the guest's wallet.</param>
+            <param name="walletColor">The color of the guest's wallet.</param>
+            <param name="gender">The guest's gender.</param>
+            <param name="checkingAccount">The guest's money account.</param>
+        </member>
+        <member name="P:People.Guest.IsActive">
+            <summary>
+            Gets or sets a value indicating whether the animal is active or not.
+            </summary>
+        </member>
+        <member name="P:People.Guest.OnTextChange">
+            <summary>
+            Gets or sets the OnTextChange Action.
+            </summary>
+        </member>
+        <member name="P:People.Guest.AdoptedAnimal">
+            <summary>
+            Gets or sets the adopted animal.
+            </summary>
+        </member>
+        <member name="P:People.Guest.Age">
+            <summary>
+            Gets or sets the age of the guest.
+            </summary>
+        </member>
+        <member name="P:People.Guest.CheckingAccount">
+            <summary>
+            Gets the guest's checking account.
+            </summary>
+        </member>
+        <member name="P:People.Guest.Gender">
+            <summary>
+            Gets or sets the gender of the guest.
+            </summary>
+        </member>
+        <member name="P:People.Guest.Name">
+            <summary>
+            Gets or sets the name of the guest.
+            </summary>
+        </member>
+        <member name="P:People.Guest.Wallet">
+            <summary>
+            Gets the guest's wallet.
+            </summary>
+        </member>
+        <member name="P:People.Guest.Weight">
+            <summary>
+            Gets or sets the weight of the guest.
+            </summary>
+        </member>
+        <member name="P:People.Guest.WeightGainPercentage">
+            <summary>
+            Gets the weight gain after eating.
+            </summary>
+        </member>
+        <member name="P:People.Guest.DisplaySize">
+            <summary>
+            Gets the display size.
+            </summary>
+        </member>
+        <member name="P:People.Guest.ResourceKey">
+            <summary>
+            Gets the resource key.
+            </summary>
+        </member>
+        <member name="P:People.Guest.XPosition">
+            <summary>
+            Gets the pixel coordinates (where in the cage) that the animal we be drawn at.
+            </summary>
+        </member>
+        <member name="P:People.Guest.YPosition">
+            <summary>
+            Gets the pixel coordinates (where in the cage) that the animal we be drawn at.
+            </summary>
+        </member>
+        <member name="P:People.Guest.XDirection">
+            <summary>
+            Gets the way in which the animal will be facing (left or right/up or down).
+            </summary>
+        </member>
+        <member name="P:People.Guest.YDirection">
+            <summary>
+            Gets the way in which the animal will be facing (left or right/up or down).
+            </summary>
+        </member>
+        <member name="P:People.Guest.HungerState">
+            <summary>
+            Gets the hungerstate of the guest.
+            </summary>
+        </member>
+        <member name="P:People.Guest.GetVendingMachine">
+            <summary>
+            Gets or sets a vending machine for the guest to use to feed an animal.
+            </summary>
+        </member>
+        <member name="P:People.Guest.OnImageUpdate">
+            <summary>
+            Gets or sets the on image update.
+            </summary>
+        </member>
+        <member name="M:People.Guest.HandleAnimalHungry">
+            <summary>
+            Handles the adopted animal's hunger.
+            </summary>
+        </member>
+        <member name="M:People.Guest.HandleReadyToFeed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Feeds the animal and stops the timer.
+            </summary>
+            <param name="sender">The feed timer.</param>
+            <param name="e">The event when the timer is hit.</param>
+        </member>
+        <member name="M:People.Guest.Eat(Foods.Food)">
+            <summary>
+            Eats the specified food.
+            </summary>
+            <param name="food">The food to eat.</param>
+        </member>
+        <member name="M:People.Guest.FeedAnimal(Foods.IEater)">
+            <summary>
+            Feeds the specified eater.
+            </summary>
+            <param name="eater">The eater to be fed.</param>
+        </member>
+        <member name="M:People.Guest.ToString">
+            <summary>
+            Generates a string representation of the guest.
+            </summary>
+            <returns>A string representation of the guest.</returns>
+        </member>
+        <member name="M:People.Guest.VisitInformationBooth(People.GivingBooth)">
+            <summary>
+            The guest visits the information booth.
+            </summary>
+            <param name="informationBooth">The information booth the guest is visiting.</param>
+        </member>
+        <member name="M:People.Guest.VisitTicketBoot(People.MoneyCollectingBooth)">
+            <summary>
+            The guest visits the ticket booth.
+            </summary>
+            <param name="ticketBooth">The ticket booth the guest is visiting.</param>
+            <returns>Returns a ticket to the guest.</returns>
+        </member>
+        <member name="M:People.Guest.WithdrawMoney(System.Decimal)">
+            <summary>
+            Withdraws money from the guest's checking account.
+            </summary>
+            <param name="amount">The amount to be withdrawn.</param>
+        </member>
+        <member name="T:People.MoneyCollectingBooth">
+            <summary>
+            This class represents a booth that sells items.
+            </summary>
+        </member>
+        <member name="F:People.MoneyCollectingBooth.moneyBox">
+            <summary>
+            The money box of the booth.
+            </summary>
+        </member>
+        <member name="F:People.MoneyCollectingBooth.ticketPrice">
+            <summary>
+            The price of a ticket.
+            </summary>
+        </member>
+        <member name="F:People.MoneyCollectingBooth.waterBottlePrice">
+            <summary>
+            The price of a water bottle.
+            </summary>
+        </member>
+        <member name="F:People.MoneyCollectingBooth.ticketStack">
+            <summary>
+            Stack of tickets.
+            </summary>
+        </member>
+        <member name="M:People.MoneyCollectingBooth.#ctor(People.Employee,System.Decimal,System.Decimal,MoneyCollectors.IMoneyCollector)">
+            <summary>
+            Instantiates a new instance of the MoneyCollectingBooth class.
+            </summary>
+            <param name="attendant">The attendant working the booth.</param>
+            <param name="ticketPrice">The price of a ticket.</param>
+            <param name="waterBottlePrice">The price of a water bottle.</param>
+            <param name="moneyBox">Money box of the booth.</param>
+        </member>
+        <member name="P:People.MoneyCollectingBooth.MoneyBalance">
+            <summary>
+            Gets the money balance of the booth.
+            </summary>
+        </member>
+        <member name="P:People.MoneyCollectingBooth.TicketPrice">
+            <summary>
+            Gets the price of a ticket.
+            </summary>
+        </member>
+        <member name="P:People.MoneyCollectingBooth.WaterBottlePrice">
+            <summary>
+            Gets the price of a water bottle.
+            </summary>
+        </member>
+        <member name="M:People.MoneyCollectingBooth.AddMoney(System.Decimal)">
+            <summary>
+            Adds money to the money box of the booth.
+            </summary>
+            <param name="amount">The amount of money to be added.</param>
+        </member>
+        <member name="M:People.MoneyCollectingBooth.RemoveMoney(System.Decimal)">
+            <summary>
+            Removes money from the money box of the booth.
+            </summary>
+            <param name="amount">The amount to be removed.</param>
+            <returns>Returns the amount of money left.</returns>
+        </member>
+        <member name="M:People.MoneyCollectingBooth.SellTicket(System.Decimal)">
+            <summary>
+            Sells a ticket to a guest.
+            </summary>
+            <param name="payment">The payment for a ticket.</param>
+            <returns>Returns a ticket.</returns>
+        </member>
+        <member name="M:People.MoneyCollectingBooth.SellWaterBottle(System.Decimal)">
+            <summary>
+            Sells a water bottle to a guest.
+            </summary>
+            <param name="payment">The payment for a water bottle.</param>
+            <returns>Returns a water bottle.</returns>
+        </member>
+        <member name="T:People.Restroom">
+            <summary>
+            The class which is used to represent a restroom.
+            </summary>
+        </member>
+        <member name="F:People.Restroom.capacity">
+            <summary>
+            The maximum number of people allowed in the restroom at a given time.
+            </summary>
+        </member>
+        <member name="F:People.Restroom.gender">
+            <summary>
+            The gender of the restroom.
+            </summary>
+        </member>
+        <member name="M:People.Restroom.#ctor(System.Int32,Reproducers.Gender)">
+            <summary>
+            Initializes a new instance of the Restroom class.
+            </summary>
+            <param name="capacity">The maximum number of people allowed in the restroom at a given time.</param>
+            <param name="gender">The gender of the restroom.</param>
+        </member>
+        <member name="T:People.Wallet">
+            <summary>
+            The class which is used to represent a wallet.
+            </summary>
+        </member>
+        <member name="F:People.Wallet.color">
+            <summary>
+            The color of the wallet.
+            </summary>
+        </member>
+        <member name="F:People.Wallet.moneyPocket">
+            <summary>
+            The compartment of the wallet that holds money.
+            </summary>
+        </member>
+        <member name="M:People.Wallet.#ctor(People.WalletColor)">
+            <summary>
+            Initializes a new instance of the Wallet class.
+            </summary>
+            <param name="color">The color of the wallet.</param>
+        </member>
+        <member name="P:People.Wallet.MoneyBalance">
+            <summary>
+            Gets or sets the money balance in the wallet.
+            </summary>
+        </member>
+        <member name="P:People.Wallet.OnBalanceChange">
+            <summary>
+            Gets or sets the OnBalanceChange Action.
+            </summary>
+        </member>
+        <member name="P:People.Wallet.WalletColor">
+            <summary>
+            Gets or sets the wallet's color.
+            </summary>
+        </member>
+        <member name="M:People.Wallet.AddMoney(System.Decimal)">
+            <summary>
+            Adds money to the wallet.
+            </summary>
+            <param name="amount">Amount of money to be added.</param>
+        </member>
+        <member name="M:People.Wallet.RemoveMoney(System.Decimal)">
+            <summary>
+            Removes money from the wallet.
+            </summary>
+            <param name="amount">The amount to be removed.</param>
+            <returns>Returns the amount left in the wallet after the money has been removed.</returns>
+        </member>
+        <member name="T:People.WalletColor">
+            <summary>
+            This enumeration represents the color of a person's wallet.
+            </summary>
+        </member>
+    </members>
+</doc>
